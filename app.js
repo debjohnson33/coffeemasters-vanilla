@@ -5,8 +5,9 @@ import Router from "./services/Router.js";
 
 window.app = {};
 app.Store = Store;
+app.router = Router;
 
 window.addEventListener("DOMContentLoaded", async () => {
-  app.router.init();
   loadData();
+  app.router.init();
 });
